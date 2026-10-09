@@ -1,0 +1,40 @@
+{
+  "sequence": "corridor1-3",
+  "bag_path": "dataset/corridor1-3.bag",
+  "topics": {
+    "scan": "/scan",
+    "odom": "/odom",
+    "ground_truth": "/gt",
+    "tf_static": "/tf_static"
+  },
+  "frames": {
+    "base": "base_link",
+    "laser": "laser",
+    "odom": "base_odom",
+    "ground_truth_map": "gt_map"
+  },
+  "output": {
+    "data_dir": "results/data",
+    "checks_dir": "results/checks",
+    "plots_dir": "plots/data_preparation"
+  },
+  "checks": {
+    "gap_factor": 1.5,
+    "revisit_min_time_separation_s": 15.0,
+    "revisit_min_path_separation_m": 10.0,
+    "revisit_radii_m": [0.5, 1.0, 2.0, 3.0, 5.0],
+    "odom_gt_lag_search_ms": 300,
+    "consistency_scan_stride": 2,
+    "consistency_grid_resolution_m": 0.05,
+    "extrinsic_search_xy_m": [-0.3, 0.3, 0.05],
+    "extrinsic_search_yaw_deg": [-1.0, -0.5, 0.0, 0.11, 0.5, 1.0],
+    "extrinsic_search_scan_stride": 4,
+    "relative_motion_windows_s": [1.0, 2.0],
+    "turning_threshold_deg": 20.0,
+    "max_plausible_speed_mps": 3.0
+  },
+  "ground_truth": {
+    "child_frame_interpretation": "laser",
+    "_comment": "The /gt messages are labelled gt_map -> base_link. Two independent checks in src/check_data.py (map sharpness grid search, odometry relative-motion test) indicate that the poses correspond to the laser frame. 'laser' => base_link pose = gt (+) T_base_laser^-1. Set to 'base_link' to use the label as is."
+  }
+}

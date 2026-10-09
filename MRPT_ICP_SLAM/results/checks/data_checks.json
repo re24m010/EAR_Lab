@@ -1,0 +1,694 @@
+{
+  "sequence": "corridor1-3",
+  "config": "D:\\Meine Studium\\Semester_3\\EAR_LAB\\config\\dataset.json",
+  "timing": {
+    "scan": {
+      "count": 2802,
+      "first_stamp_ns": 1560200074212862751,
+      "last_stamp_ns": 1560200144184470751,
+      "duration_s": 69.971608,
+      "rate_hz": 40.030522,
+      "dt_ms": {
+        "min": 24.571,
+        "max": 25.158,
+        "mean": 24.980938,
+        "median": 24.981,
+        "std": 0.049526
+      },
+      "non_monotonic": 0,
+      "gaps": [],
+      "bag_time_equals_stamp_exactly": 2802,
+      "bag_minus_stamp_ms": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      }
+    },
+    "odom": {
+      "count": 1400,
+      "first_stamp_ns": 1560200074236710885,
+      "last_stamp_ns": 1560200144191710808,
+      "duration_s": 69.955,
+      "rate_hz": 19.998571,
+      "dt_ms": {
+        "min": 44.000149,
+        "max": 55.999994,
+        "mean": 50.003574,
+        "median": 49.999952,
+        "std": 1.404309
+      },
+      "non_monotonic": 0,
+      "gaps": [],
+      "bag_time_equals_stamp_exactly": 1400,
+      "bag_minus_stamp_ms": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      }
+    },
+    "gt": {
+      "count": 2797,
+      "first_stamp_ns": 1560200074212862751,
+      "last_stamp_ns": 1560200144184470751,
+      "duration_s": 69.971608,
+      "rate_hz": 39.959065,
+      "dt_ms": {
+        "min": 24.571,
+        "max": 49.996,
+        "mean": 25.025611,
+        "median": 24.981,
+        "std": 1.05619
+      },
+      "non_monotonic": 0,
+      "gaps": [
+        {
+          "after_index": 119,
+          "dt_ms": 49.946
+        },
+        {
+          "after_index": 296,
+          "dt_ms": 49.996
+        },
+        {
+          "after_index": 825,
+          "dt_ms": 49.959
+        },
+        {
+          "after_index": 1599,
+          "dt_ms": 49.971
+        },
+        {
+          "after_index": 2485,
+          "dt_ms": 49.888
+        }
+      ],
+      "bag_time_equals_stamp_exactly": 2797,
+      "bag_minus_stamp_ms": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "scans": {
+    "num_scans": 2802,
+    "num_beams": 720,
+    "fov_deg": 179.749999,
+    "angle_min_deg": -90.000003,
+    "angle_max_deg": 89.749997,
+    "angle_increment_deg": 0.25,
+    "beam_center_offset_deg": -0.125003,
+    "range_categories_fraction": {
+      "valid": 0.930172,
+      "nan": 9e-06,
+      "+inf": 0.069818,
+      "-inf": 1e-06,
+      "below_range_min": 0.0,
+      "above_range_max": 0.0
+    },
+    "valid_fraction_per_scan": {
+      "min": 0.652778,
+      "max": 1.0,
+      "mean": 0.930172,
+      "median": 0.968056,
+      "std": 0.085143
+    },
+    "scans_with_valid_fraction_below_0.8": 327,
+    "valid_range_m": {
+      "min": 0.2770000100135803,
+      "max": 38.69599914550781,
+      "median": 1.8519999980926514,
+      "p99": 16.586349487304688
+    },
+    "least_valid_beams": [
+      {
+        "beam": 397,
+        "angle_deg": 9.249997,
+        "valid_fraction": 0.608851
+      },
+      {
+        "beam": 396,
+        "angle_deg": 8.999997,
+        "valid_fraction": 0.613133
+      },
+      {
+        "beam": 398,
+        "angle_deg": 9.499997,
+        "valid_fraction": 0.617416
+      },
+      {
+        "beam": 395,
+        "angle_deg": 8.749997,
+        "valid_fraction": 0.628837
+      },
+      {
+        "beam": 399,
+        "angle_deg": 9.749997,
+        "valid_fraction": 0.643826
+      },
+      {
+        "beam": 390,
+        "angle_deg": 7.499997,
+        "valid_fraction": 0.659886
+      },
+      {
+        "beam": 394,
+        "angle_deg": 8.499997,
+        "valid_fraction": 0.664168
+      },
+      {
+        "beam": 389,
+        "angle_deg": 7.249997,
+        "valid_fraction": 0.665239
+      },
+      {
+        "beam": 400,
+        "angle_deg": 9.999997,
+        "valid_fraction": 0.672734
+      },
+      {
+        "beam": 388,
+        "angle_deg": 6.999997,
+        "valid_fraction": 0.682727
+      }
+    ],
+    "timing_model": {
+      "scan_time_s": 0.02500000037252903,
+      "time_increment_s": 1.7361111531499773e-05,
+      "steps_per_revolution": 1439.999987,
+      "deg_per_step_from_timing": 0.25,
+      "acquisition_time_of_720_beams_ms": 12.482639
+    },
+    "motion_during_one_scan": {
+      "max_odom_speed_mps": 1.351111,
+      "max_odom_yaw_rate_radps": 0.914242,
+      "max_translation_cm": 1.686543,
+      "max_rotation_deg": 0.653868
+    }
+  },
+  "frames": {
+    "tf_tree": {
+      "base_link": [
+        "d400_color",
+        "t265_fisheye1",
+        "marker",
+        "laser"
+      ],
+      "d400_color": [
+        "d400_depth",
+        "d400_imu"
+      ],
+      "t265_fisheye1": [
+        "t265_fisheye2",
+        "t265_imu"
+      ]
+    },
+    "base_to_laser": {
+      "translation_m": [
+        0.143509,
+        -0.096425,
+        0.998049
+      ],
+      "rpy_deg": [
+        0.912841,
+        2.09551,
+        0.111924
+      ],
+      "se2_x_y_yawdeg": [
+        0.143509,
+        -0.096425,
+        0.111924
+      ],
+      "laser_x_axis_in_base": [
+        0.999329,
+        0.001952,
+        -0.036565
+      ],
+      "laser_z_axis_in_base": [
+        0.036592,
+        -0.01586,
+        0.999204
+      ],
+      "laser_upright": true,
+      "rotation_orthonormal_error": 0.0
+    },
+    "scan_plane_tilt": {
+      "beam_elevation_deg": {
+        "min": -2.285622,
+        "max": 0.90308,
+        "mean": -1.335265,
+        "median": -1.615964,
+        "std": 0.91036
+      },
+      "lowest_beam_angle_deg": -23.500003,
+      "lowest_beam_elevation_deg": -2.285622,
+      "floor_hit_distance_if_base_link_on_floor_m": 25.005725
+    }
+  },
+  "quaternions": {
+    "odom_norm": {
+      "min": 1.0,
+      "max": 1.0,
+      "max_abs_dev_from_1": 0.0
+    },
+    "gt_norm": {
+      "min": 1.0,
+      "max": 1.0,
+      "max_abs_dev_from_1": 0.0
+    },
+    "tf_static_norm_max_abs_dev": 0.0,
+    "odom_roll_pitch_deg": {
+      "roll": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      },
+      "pitch": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0
+      }
+    },
+    "odom_z_m": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0
+    },
+    "gt_roll_pitch_deg": {
+      "roll": {
+        "min": -0.117583,
+        "max": 0.296621,
+        "mean": 0.085724,
+        "median": 0.031322,
+        "std": 0.115552
+      },
+      "pitch": {
+        "min": -0.29662,
+        "max": 0.296602,
+        "mean": 0.149631,
+        "median": 0.288617,
+        "std": 0.211881
+      }
+    },
+    "gt_z_m": {
+      "min": -0.435116,
+      "max": -0.198304,
+      "mean": -0.333909,
+      "median": -0.338405,
+      "std": 0.0774
+    }
+  },
+  "odom_twist": {
+    "vx_twist_vs_pose_derivative": {
+      "corr": 0.975347,
+      "median_abs_diff_mps": 0.020796
+    },
+    "wz_twist_vs_pose_derivative": {
+      "corr": 0.999322,
+      "median_abs_diff_radps": 0.003727
+    },
+    "lateral_velocity_from_pose_mps": {
+      "min": -0.007953,
+      "max": 0.007901,
+      "mean": -2e-06,
+      "median": 0.0,
+      "std": 0.000525
+    },
+    "twist_vy_all_zero": true,
+    "pose_covariance_all_zero": true,
+    "twist_covariance_all_zero": true
+  },
+  "pose_jumps": {
+    "gt": {
+      "max_plausible_speed_mps": 3.0,
+      "implied_speed_mps": {
+        "median": 1.124446,
+        "p99": 2.38106,
+        "max": 7.228705
+      },
+      "steps_above_limit": 13,
+      "events": [
+        {
+          "t_rel_s": 39.464431,
+          "step_cm": 13.620564,
+          "dt_ms": 24.978876,
+          "implied_speed_mps": 5.452833
+        },
+        {
+          "t_rel_s": 39.48941,
+          "step_cm": 17.839201,
+          "dt_ms": 24.981022,
+          "implied_speed_mps": 7.141101
+        },
+        {
+          "t_rel_s": 39.539379,
+          "step_cm": 17.721143,
+          "dt_ms": 25.052071,
+          "implied_speed_mps": 7.073724
+        },
+        {
+          "t_rel_s": 58.80203,
+          "step_cm": 15.397368,
+          "dt_ms": 24.973154,
+          "implied_speed_mps": 6.165568
+        },
+        {
+          "t_rel_s": 59.101901,
+          "step_cm": 18.050117,
+          "dt_ms": 24.970055,
+          "implied_speed_mps": 7.228705
+        },
+        {
+          "t_rel_s": 59.126871,
+          "step_cm": 8.852316,
+          "dt_ms": 25.020838,
+          "implied_speed_mps": 3.537977
+        },
+        {
+          "t_rel_s": 59.151892,
+          "step_cm": 11.639759,
+          "dt_ms": 25.038242,
+          "implied_speed_mps": 4.648792
+        },
+        {
+          "t_rel_s": 62.950091,
+          "step_cm": 9.171805,
+          "dt_ms": 24.827003,
+          "implied_speed_mps": 3.694286
+        },
+        {
+          "t_rel_s": 62.974918,
+          "step_cm": 8.446639,
+          "dt_ms": 25.043964,
+          "implied_speed_mps": 3.372724
+        },
+        {
+          "t_rel_s": 63.349882,
+          "step_cm": 8.318676,
+          "dt_ms": 25.01297,
+          "implied_speed_mps": 3.325745
+        },
+        {
+          "t_rel_s": 63.474773,
+          "step_cm": 14.870423,
+          "dt_ms": 24.996996,
+          "implied_speed_mps": 5.948884
+        },
+        {
+          "t_rel_s": 63.699683,
+          "step_cm": 7.502626,
+          "dt_ms": 24.98579,
+          "implied_speed_mps": 3.002757
+        },
+        {
+          "t_rel_s": 67.57273,
+          "step_cm": 7.759645,
+          "dt_ms": 25.009871,
+          "implied_speed_mps": 3.102633
+        }
+      ],
+      "zero_motion_steps": 0
+    },
+    "odom": {
+      "zero_motion_steps_while_vx_above_0.3": 0,
+      "double_steps_above_1.8x_median": 10,
+      "max_plausible_speed_mps": 3.0,
+      "implied_speed_mps": {
+        "median": 1.117015,
+        "p99": 1.424748,
+        "max": 2.532487
+      },
+      "steps_above_limit": 0,
+      "events": [],
+      "zero_motion_steps": 76
+    }
+  },
+  "scan_gt_association": {
+    "scans": 2802,
+    "gt_poses": 2797,
+    "scans_with_identical_gt_stamp": 2797,
+    "gt_stamps_not_equal_to_any_scan_stamp": 0,
+    "scan_indices_without_gt": [
+      120,
+      298,
+      828,
+      1603,
+      2490
+    ],
+    "scan_times_without_gt_rel_s": [
+      2.996843,
+      7.442207,
+      20.67968,
+      40.038999,
+      62.200338
+    ]
+  },
+  "odom_phase_to_scans": {
+    "odom_minus_nearest_scan_ms": {
+      "min": -12.451939,
+      "max": 12.457155,
+      "mean": 0.487546,
+      "median": 1.152548,
+      "std": 6.707144
+    },
+    "odom_stamps_identical_to_a_scan": 0
+  },
+  "odom_gt_lag": {
+    "yaw_rate": {
+      "best_lag_ms": 6.0,
+      "corr_at_best": 0.998717,
+      "corr_at_zero": 0.998661
+    },
+    "speed": {
+      "best_lag_ms": -49.0,
+      "corr_at_best": 0.824764,
+      "corr_at_zero": 0.822586
+    }
+  },
+  "registration_sharpness": {
+    "grid_resolution_m": 0.05,
+    "scan_stride": 2,
+    "occupied_cells": {
+      "A_extrinsic_from_tf_static": 17542,
+      "B_no_extrinsic_laser_at_base": 13399,
+      "C_extrinsic_mirrored_beams": 108625,
+      "D_extrinsic_yaw_plus_180deg": 134430
+    },
+    "ratio_to_A": {
+      "A_extrinsic_from_tf_static": 1.0,
+      "B_no_extrinsic_laser_at_base": 0.763824,
+      "C_extrinsic_mirrored_beams": 6.192281,
+      "D_extrinsic_yaw_plus_180deg": 7.663322
+    }
+  },
+  "extrinsic_grid_search": {
+    "grid_resolution_m": 0.05,
+    "scan_stride": 4,
+    "search": {
+      "xy_m": [
+        -0.3,
+        0.3,
+        0.05
+      ],
+      "yaw_deg": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.11,
+        0.5,
+        1.0
+      ],
+      "evaluations": 1014
+    },
+    "best": [
+      {
+        "cells": 10967,
+        "x": -0.0,
+        "y": -0.0,
+        "yaw_deg": 0.0
+      },
+      {
+        "cells": 11039,
+        "x": -0.0,
+        "y": -0.0,
+        "yaw_deg": 0.11
+      },
+      {
+        "cells": 11210,
+        "x": -0.05,
+        "y": -0.0,
+        "yaw_deg": 0.0
+      },
+      {
+        "cells": 11427,
+        "x": -0.05,
+        "y": -0.0,
+        "yaw_deg": 0.11
+      },
+      {
+        "cells": 11680,
+        "x": 0.05,
+        "y": -0.0,
+        "yaw_deg": 0.0
+      }
+    ],
+    "cells_at_tf_static_extrinsic": 14893,
+    "cells_at_zero_offset": 10967
+  },
+  "gt_frame_odometry_test": {
+    "1s": {
+      "pairs": 2556,
+      "turning_pairs": 203,
+      "gt_as_base_link": {
+        "rmse_all_m": 0.066027,
+        "rmse_turning_m": 0.130268,
+        "rmse_straight_m": 0.057198
+      },
+      "gt_as_laser": {
+        "rmse_all_m": 0.060163,
+        "rmse_turning_m": 0.083821,
+        "rmse_straight_m": 0.057669
+      }
+    },
+    "2s": {
+      "pairs": 2316,
+      "turning_pairs": 302,
+      "gt_as_base_link": {
+        "rmse_all_m": 0.119313,
+        "rmse_turning_m": 0.190953,
+        "rmse_straight_m": 0.104415
+      },
+      "gt_as_laser": {
+        "rmse_all_m": 0.107653,
+        "rmse_turning_m": 0.124372,
+        "rmse_straight_m": 0.104917
+      }
+    }
+  },
+  "gt_child_frame_interpretation_used": "laser",
+  "odom_alignment": {
+    "note": "Odometry characterisation only - NOT a SLAM result.",
+    "gt_poses_used": 2796,
+    "gt_poses_outside_odom_time_range": 1,
+    "initial_pose_alignment": {
+      "transform_x_y_yawdeg": [
+        -1.412857,
+        -21.574102,
+        23.719056
+      ],
+      "pos_rmse_m": 1.896429,
+      "pos_max_m": 2.805041,
+      "pos_final_m": 2.190028,
+      "yaw_abs_mean_deg": 0.680495,
+      "yaw_final_deg": 1.256312
+    },
+    "se2_least_squares_alignment": {
+      "transform_x_y_yawdeg": [
+        -0.671501,
+        -23.81542,
+        26.76569
+      ],
+      "pos_rmse_m": 0.223967,
+      "pos_max_m": 0.446886,
+      "pos_final_m": 0.037933,
+      "yaw_abs_mean_deg": 2.450043,
+      "yaw_final_deg": 1.790322
+    },
+    "path_length_m": {
+      "gt_full_rate": 74.490845,
+      "odom_full_rate": 71.109077,
+      "gt_0.5s": 71.346821,
+      "odom_0.5s": 70.674063
+    },
+    "odom_to_gt_length_ratio_0.5s": 0.990571,
+    "gt_interpretation": "laser"
+  },
+  "odom_alignment_if_gt_is_base_link": {
+    "note": "Odometry characterisation only - NOT a SLAM result.",
+    "gt_poses_used": 2796,
+    "gt_poses_outside_odom_time_range": 1,
+    "initial_pose_alignment": {
+      "transform_x_y_yawdeg": [
+        -1.470583,
+        -21.79706,
+        23.83098
+      ],
+      "pos_rmse_m": 1.891941,
+      "pos_max_m": 2.927443,
+      "pos_final_m": 2.370955,
+      "yaw_abs_mean_deg": 0.680495,
+      "yaw_final_deg": 1.256312
+    },
+    "se2_least_squares_alignment": {
+      "transform_x_y_yawdeg": [
+        -0.690915,
+        -23.919585,
+        26.771669
+      ],
+      "pos_rmse_m": 0.218206,
+      "pos_max_m": 0.490113,
+      "pos_final_m": 0.280207,
+      "yaw_abs_mean_deg": 2.344097,
+      "yaw_final_deg": 1.684376
+    },
+    "path_length_m": {
+      "gt_full_rate": 74.794856,
+      "odom_full_rate": 71.109077,
+      "gt_0.5s": 71.726464,
+      "odom_0.5s": 70.674063
+    },
+    "odom_to_gt_length_ratio_0.5s": 0.985328
+  },
+  "revisits": {
+    "criterion": "pairs with |dt| >= 15.0 s and |ds| >= 10.0 m along the path",
+    "start_end_distance_m": 42.34603,
+    "gt_path_length_m": 74.82799,
+    "bbox_m": {
+      "x": [
+        33.948571,
+        54.40231
+      ],
+      "y": [
+        -58.901723,
+        -10.793951
+      ]
+    },
+    "net_heading_change_deg": 174.801683,
+    "total_abs_heading_change_deg": 470.357798,
+    "closest_revisit": {
+      "distance_m": 0.354871,
+      "i": 1780,
+      "j": 2687,
+      "t_i_rel_s": 44.560845,
+      "t_j_rel_s": 67.247901,
+      "heading_difference_deg": 179.128407
+    },
+    "fraction_of_poses_with_revisit_within_radius": {
+      "0.5": 0.17912,
+      "1.0": 0.195567,
+      "2.0": 0.222381,
+      "3.0": 0.246335,
+      "5.0": 0.302467
+    }
+  },
+  "reobservation": {
+    "grid_resolution_m": 0.25,
+    "min_gap_s": 10.0,
+    "scan_stride": 2,
+    "occupied_cells": 1654,
+    "cells_reobserved_after_gap": 215,
+    "fraction_reobserved_after_gap": 0.129988
+  }
+}

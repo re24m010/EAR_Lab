@@ -1,0 +1,2 @@
+# Keep generated results byte-exact (no CRLF conversion), required for hash-based reproducibility checks
+results/** -text

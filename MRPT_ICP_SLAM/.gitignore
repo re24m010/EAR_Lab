@@ -1,0 +1,83 @@
+# =====================================================================
+# EAR-LAB MRPT ICP-SLAM - files that must NOT be versioned
+# =====================================================================
+
+# --- Python environment, caches, build artefacts ----------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# --- Original dataset (2.8 GB; source + SHA-256 documented in README) -
+dataset/
+*.bag
+*.bag.active
+*.tar
+*.tar.gz
+*.zip
+
+# --- Dataset licence CC BY-ND 4.0: no derivative datasets in this PUBLIC repo
+# Whitelist: everything under results/ is ignored except the reviewed
+# aggregate statistics reports. New result files require an explicit decision.
+/results/*
+!/results/checks/
+/results/checks/*
+!/results/checks/data_checks.json
+!/results/checks/data_checks.md
+# Figures are regenerated locally with src/plot_data.py (not published for now)
+/plots/
+# Numpy arrays may contain extracted scans / trajectories
+*.npz
+*.npy
+
+# --- Third-party tools: MRPT installer, installation, install logs -----
+# (install logs contain machine-specific PATH entries)
+tools/
+
+# --- Large / binary SLAM artefacts (regenerable from scripts) ----------
+*.rawlog
+*.rawlog.gz
+*.simplemap
+*.simplemap.gz
+*.3Dscene
+*.gridmap
+*.gridmap.gz
+results/**/tmp/
+results/**/scratch/
+
+# --- Temporary files and logs -----------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+# (*.log also covers generated CARMEN logs: regenerable, hashes documented)
+*.log
+
+# --- Credentials, tokens, personal settings ---------------------------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials*
+.git-credentials
+.netrc
+
+# --- Editor / OS -------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+Thumbs.db
+desktop.ini
+.DS_Store
